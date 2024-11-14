@@ -1,3 +1,4 @@
+// We select everything we need on the page
 let menuIcon = document.querySelector('#menuIcon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
@@ -19,6 +20,7 @@ window.onscroll = () => {
 	})
 }
 
+// The icon changes if we click on it
 menuIcon.onclick = () => {
 	menuIcon.classList.toggle('bx-x');
 	navbar.classList.toggle('active');
