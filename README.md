@@ -1,25 +1,27 @@
-# Responsive Web Portfolio
+# Portefeuille Web réactif
 
-Welcome to my web portfolio, a project entirely created in **HTML**, **CSS** and **JavaScript**. This site is designed to be responsive, providing an optimal experience on all types of devices. I also use icons from **BoxIcons** to enrich the appearance and navigation.
+Bienvenue sur mon site portfolio, un projet entièrement créé en **HTML**, **CSS** et **JavaScript**. Ce site est conçu pour être responsive, offrant une expérience optimale sur tous types d'appareils. J'utilise également des icônes de **BoxIcons** pour enrichir l'apparence et la navigation.
 
-## Features
+## Caractéristiques
 
-- **Responsive Design**: The site adapts to different screen sizes (mobile, tablet, desktop) thanks to media query techniques and a flexible layout.
-- **HTML & CSS**: Semantic structure and modern styles for an elegant interface.
-- **JavaScript**: Dynamic interactions, animations and improvement of the user experience.
-- **BoxIcons**: Modern and light icons for intuitive navigation.
-  
-## Technologies Used
+- **Responsive Design** : Le site s'adapte à différentes tailles d'écran (mobile, tablette, ordinateur de bureau) grâce à des techniques de requête multimédia et une mise en page flexible.
 
-- **HTML5**: Basic structure and semantic markup.
-- **CSS3**: Flexbox, Grid, media queries, animations and transitions.
-- **JavaScript**: Interactive features for smooth navigation.
-- **BoxIcons**: Collection of integrated vector icons to improve aesthetics and navigation.
+- **HTML & CSS** : Structure sémantique et styles modernes pour une interface élégante.
+- **JavaScript** : Interactions dynamiques, animations et amélioration de l'expérience utilisateur.
+- **BoxIcons** : Icônes modernes et légères pour une navigation intuitive.
 
-## Facility
+## Technologies utilisées
 
-1. Clone this repository:
+- **HTML5** : structure de base et balisage sémantique.
+- **CSS3** : Flexbox, Grid, requêtes multimédias, animations et transitions.
+- **JavaScript** : Fonctionnalités interactives pour une navigation fluide.
+- **BoxIcons** : Collection d'icônes vectorielles intégrées pour améliorer l'esthétique et la navigation.
+
+## Installation
+
+Clonez ce dépôt :
 
    ```bash
-
    git clone https://github.com/TristanDeschamp/PortfolioWebsite.git
+   cd PortfolioWebsite
+   ```
