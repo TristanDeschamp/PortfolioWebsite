@@ -4,30 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Un protoype de site web portfolio pour moi.">
 	<title>Responsive Portfolio Website</title>
-	<!-- CSS Link -->
+	<!-- Lien CSS -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- BoxIcons Link -->
+	<!-- Lien BoxIcons -->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-	<!-- Header -->
+	<!-- Header Début -->
 	<header class="header">
-		<a href="#home" class="logo">Amélia <span>Morgan</span></a>
+		<a href="#home" class="logo" title="Vous redirige en haut de la page.">Amélia <span>Morgan</span></a>
 
+		<!-- Icone Menu Mobile -->
 		<i class='bx bx-menu' id="menuIcon"></i>
 
+		<!-- Navbar Début (Menu Desktop) -->
 		<nav class="navbar">
-			<a href="#home" class="active">Accueil</a>
-			<a href="#education">Expériences</a>
-			<a href="#services">Services</a>
-			<a href="#testimonials">Témoignages</a>
-			<a href="#contact">Contact</a>
+			<a href="#home" class="active" title="Vous redirige sur ma présentation.">Accueil</a>
+			<a href="#education" title="Vous redirge vers mon parcours">Expériences</a>
+			<a href="#services" title="Vous ammène sur mes prestations de services">Services</a>
+			<a href="#testimonials" title="Vous redirige sur quelques témoignages de mes clients">Témoignages</a>
+			<a href="#contact" title="Vous redirige vers un formulaire pour me contacter">Contact</a>
 		</nav>
-	</header>
+		<!-- Navbar Fin -->
 
+	</header>
+	<!-- Header Fin -->
+
+	<!-- Main Début -->
 	<main>
-		<!-- Home Section -->
+		<!-- Section Home Début -->
 		<section class="home" id="home">
 			<div class="homeContent">
 				<h1>Salut ! C'est <span>Amélia</span></h1>
@@ -39,15 +46,15 @@
 				</p>
 
 				<div class="socialIcons">
-					<a href="#"><i class='bx bxl-linkedin' ></i></a>
-					<a href="#"><i class='bx bxl-github'></i></a>
-					<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-					<a href="#"><i class='bx bxl-twitter'></i></a>
+					<a href="#" title="Vous redirige sur ma page Linkedin"><i class='bx bxl-linkedin' ></i></a>
+					<a href="#" title="Vous redirige sur ma page Github"><i class='bx bxl-github'></i></a>
+					<a href="#" title="Vous redirige sur ma page Instagram"><i class='bx bxl-instagram-alt'></i></a>
+					<a href="#" title="Vous redirige sur mon compte X (Twitter)"><i class='bx bxl-twitter'></i></a>
 				</div>
 
 				<div class="btnGroup">
-					<a href="#" class="btn">M'Engager</a>
-					<a href="#contact" class="btn">Me Contacter</a>
+					<a href="#" class="btn" title="Pour télécharger mon CV">M'Engager</a>
+					<a href="#contact" class="btn" title="Vous redirige vers un formulaire pour me contacter">Me Contacter</a>
 				</div>
 			</div>
 
@@ -55,11 +62,13 @@
 				<img src="assets/image.jpg" alt="Photo de Amélia">
 			</div>
 		</section>
+		<!-- Section Home Fin -->
 
-		<!-- Education Section -->
+		<!-- Section Education Début -->
 		<section class="education" id="education">
 			<h2 class="heading">Expériences</h2>
 
+			<!-- Timeline Début -->
 			<div class="timelineItems">
 
 				<div class="timelineItem">
@@ -110,9 +119,11 @@
 					</div>
 				</div>
 			</div>
+			<!-- Timeline Fin -->
 		</section>
+		<!-- Section Education Fin -->
 
-		<!-- Services Section -->
+		<!-- Section Services Début -->
 		<section class="services" id="services">
 			<h2 class="heading">Services</h2>
 
@@ -158,8 +169,9 @@
 				</div>
 			</div>
 		</section>
+		<!-- Section Services Fin -->
 
-		<!-- Testimonials Section -->
+		<!-- Section Témoignages Début -->
 		<section class="testimonials" id="testimonials">
 			<div class="testimonialsBox">
 				<h2 class="heading">Témoignages</h2>
@@ -215,37 +227,41 @@
 				</div>
 			</div>
 		</section>
+		<!-- Section Témoignages Fin -->
 
-		<!-- Contact Section -->
+		<!-- Section Contact Début -->
 		<section class="contact" id="contact">
 			<h2 class="heading">Contactez-<span>Moi</span></h2>
 
-			<form action="">
+			<form action="submit.php" enctype="multipart/form-data" method="post">
 				<div class="inputGroup">
 					<div class="inputBox">
-						<input type="text" placeholder="Votre Nom...">
-						<input type="email" placeholder="Votre adresse mail...">
+						<input type="text" placeholder="Votre Nom..." required>
+						<input type="email" placeholder="Votre adresse mail..." required>
 					</div>
 					<div class="inputBox">
-						<input type="number" placeholder="Votre numéro de téléphone...">
-						<input type="text" placeholder="Sujet du mail...">
+						<input type="number" placeholder="Votre numéro de téléphone..." required>
+						<input type="text" placeholder="Sujet du mail..." required>
 					</div>
 				</div>
 
 				<div class="inputGroup2">
-					<textarea cols="30" rows="10" placeholder="Votre message..."></textarea>
-					<input type="submit" value="Envoyer le message" class="btn">
+					<textarea cols="30" rows="10" placeholder="Votre message..." required></textarea>
+					<input type="submit" value="Envoyer le message" class="btn" name="submitFormBtn">
 				</div>
 			</form>
 		</section>
+		<!-- Section Contact Fin -->
 	</main>
+	<!-- Main Fin -->
 
+	<!-- Footer Début -->
 	<footer class="footer">
 		<div class="social">
-			<a href="#"><i class='bx bxl-linkedin' ></i></a>
-			<a href="#"><i class='bx bxl-github'></i></a>
-			<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-			<a href="#"><i class='bx bxl-twitter'></i></a>
+			<a href="#" title="Vous redirige sur ma page Linkedin"><i class='bx bxl-linkedin' ></i></a>
+			<a href="#" title="Vous redirige sur mon compte Github"><i class='bx bxl-github'></i></a>
+			<a href="#" title="Vous redirige sur mon compte Instagram"><i class='bx bxl-instagram-alt'></i></a>
+			<a href="#" title="Vous redirige sur mon compte X (Twitter)"><i class='bx bxl-twitter'></i></a>
 		</div>
 
 		<ul class="list">
@@ -254,27 +270,28 @@
 			</li>
 
 			<li>
-				<a href="#">Services</a>
+				<a href="#" title="Vous ammène sur mes prestations de services">Services</a>
 			</li>
 
 			<li>
-				<a href="#">A Propos</a>
+				<a href="#" title="Vous redirige sur ma présentation.">A Propos</a>
 			</li>
 
 			<li>
-				<a href="#">Contact</a>
+				<a href="#" title="Vous redirige vers un formulaire pour me contacter">Contact</a>
 			</li>
 
 			<li>
-				<a href="#">Témoignages</a>
+				<a href="#" title="Vous redirige sur quelques témoignages de mes clients">Témoignages</a>
 			</li>
 		</ul>
 		<p class="copyright">
-			&copy; Amelia Morgan | 2024 Tout Droits Réservés.
+			&copy; Tristan Deschamp | 2024 Tout Droits Réservés.
 		</p>
 	</footer>
+	<!-- Footer Fin -->
 
-	<!-- JS Link -->
+	<!-- Lien JS -->
 	<script src="js/script.js"></script>
 </body>
 </html>
